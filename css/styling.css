@@ -3,6 +3,7 @@ body {
     margin: 0px;
 }
 
+
 #signature {
     display: block;
     margin-left: auto;
@@ -84,6 +85,7 @@ body {
 }
 
 .painting h3 {
+    pointer-events: none;
     opacity: 0;
     color: black;
     position: absolute;
@@ -92,7 +94,7 @@ body {
     transform: translate(-50%, -50%);
     margin: 0px;
     text-align: center;
-    background-color: rgb(227, 245, 255);
+    background-color: rgb(233, 244, 250);
     padding: 2%;
     border-radius: 5px;
     font-family: "Lucida Console", "Monaco", monospace;
