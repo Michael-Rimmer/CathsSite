@@ -3,7 +3,6 @@ body {
     margin: 0px;
 }
 
-
 #signature {
     display: block;
     margin-left: auto;
@@ -13,109 +12,31 @@ body {
 }
 
 #navBar {
-    float: left;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-#navBar ul {
-    clear: left;
-    float: left;
-    margin: 0;
+    list-style-type: none;
+    text-align: center;
     padding: 0;
-    position: relative;
-    left: 50%;
-    text-align: center;
+    margin: 0;
+    transform: translateX(4px)
 }
 
-#navBar ul li {
-    display: block;
-    float: left;
-    position: relative;
-    right: 50%;
-
+#navBar li {
+    display: inline;
+    padding: 0px;
+    margin-right: -4px;
 }
 
-#navBar ul li a {
-    display: block;
-    margin: 0px;
-    padding: 3px 20px;
-    color: steelblue;
+#navBar a {
+    display: inline-block;
     text-decoration: none;
-    font-family: "Lucida Console", "Monaco", monospace;
-}
-
-#galleryLink {
-    border-right: 1.5px solid #7d92ec;
-    border-left: 1.5px solid #7d92ec;
-}
-
-#navBar ul li a:hover {
-    background-color: #edeff8;
-    /* color: #fff; */
-}
-
-#title {
-    font-family: "Lucida Console", "Monaco", monospace;
-    font-size: 32pt;
-    color: #7d92ec;
+    color: steelblue;
+    padding: 3px 20px;
     text-align: center;
-    margin: 5% 10%;
-}
-
-.gallery {
-    margin: 0% 10%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-}
-
-.painting {
-    position: relative;
-    margin: 30px 15px;
-    width: 200px;
-    height: 200px;
-}
-
-.painting img {
-    height: 100%;
-    width: 100%;
-}
-
-.painting h3 {
-    pointer-events: none;
-    opacity: 0;
-    color: black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0px;
-    text-align: center;
-    background-color: rgb(233, 244, 250);
-    padding: 2%;
-    border-radius: 5px;
     font-family: "Lucida Console", "Monaco", monospace;
-    font-size: 12pt;
+    font-size: 16px;
 }
 
-.painting:hover img {
-    opacity: 0.3;
-}
-
-.painting:hover h3 {
-    opacity: 1;
-}
-
-.instaLogo {
-    display: block;
-    height: 40px;
-    width: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0.3;
+#navBar li a:hover {
+    background: #edeff8;
 }
 
 .mainContent {
@@ -126,7 +47,63 @@ body {
     margin: 100px 0px;
 }
 
-footer {
+#galleryLink {
+    border-right: 1.5px solid #7d92ec;
+    border-left: 1.5px solid #7d92ec;
+}
+
+#gallery {
+    text-align: center;
+    margin: 20px 70px;
+}
+
+.painting {
     position: relative;
-    margin: auto;
+    display: inline-block;
+    margin: 30px auto;
+}
+
+.painting img {
+    width: 220px;
+    height: 220px;
+    margin: 20px 30px;
+    padding: 0px;
+    background: #fffef7
+}
+
+.painting h3 {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 192px;
+    width: auto;
+    height: auto;
+    pointer-events: none;
+    text-align: center;
+    background-color: rgba(190, 224, 255, 0.733);
+    opacity: 0;
+    margin: 0px;
+    padding: 2%;
+    color: black;
+    font-family: "Lucida Console", "Monaco", monospace;
+    font-size: 12pt;
+    border-radius: 1pt;
+}
+
+.painting:hover h3 {
+    opacity: 1;
+}
+
+footer {
+    margin-bottom: 30px;
+}
+
+.instaLogo {
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.3;
 }
