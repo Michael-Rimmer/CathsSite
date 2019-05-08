@@ -107,3 +107,7 @@ footer {
     margin-right: auto;
     opacity: 0.3;
 }
+
+.instaLogo:hover {
+    opacity: .7;
+}

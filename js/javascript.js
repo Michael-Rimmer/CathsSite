@@ -3,7 +3,7 @@ function underlineNavBarLink() {
     var path = window.location.pathname;
     var link;
 
-    if (path.endsWith("index.html")) {
+    if (path.endsWith("home.html")) {
         link = document.getElementById("indexLink");
         link.style.textDecoration = "underline";
     } else if (path.endsWith("gallery.html")) {
@@ -16,6 +16,14 @@ function underlineNavBarLink() {
 
 }
 
+// might add back to have insta logo change colour
+// function hoverOn(element) {
+//     //element.setAttribute('src', 'imgs/instaLogoHover.png');
+// }
+
+// function hoverOff(element) {
+//     //element.setAttribute('src', 'imgs/instaLogo.png');
+// }
 
 
 window.onload = function () {
